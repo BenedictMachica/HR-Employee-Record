@@ -1,3 +1,4 @@
+<?php
 <form action="insertEmployee.php" method="POST">
 
 First Name
@@ -39,3 +40,4 @@ Date Hired
 <input type="submit" value="Save">
 
 </form>
+?>
