@@ -10,7 +10,62 @@ if(!isset($_SESSION["login"]))
 <!DOCTYPE html>
 <html>
     <body>
-    <h2>Welcome, <?php echo $_SESSION["fname"]; ?> ! </h2>
+    <h2>Welcome!</h2>
+
+<table>
+    <tr>
+        <td>First Name:</td>
+        <td><?php echo $_SESSION["fname"]; ?></td>
+    </tr>
+    <tr>
+        <td>Last Name:</td>
+        <td><?php echo $_SESSION["lname"]; ?></td>
+    </tr>
+    <tr>
+        <td>Gender:</td>
+        <td><?php echo $_SESSION["gender"]; ?></td>
+    </tr>
+    <tr>
+        <td>Date of Birth:</td>
+        <td><?php echo $_SESSION["dob"]; ?></td>
+    </tr>
+    <tr>
+        <td>Department:</td>
+        <td><?php echo $_SESSION["department"]; ?></td>
+    </tr>
+    <tr>
+        <td>Position:</td>
+        <td><?php echo $_SESSION["position"]; ?></td>
+    </tr>
+    <tr>
+        <td>Salary:</td>
+        <td><?php echo $_SESSION["salary"]; ?></td>
+    </tr>
+    <tr>
+        <td>Phone Number:</td>
+        <td><?php echo $_SESSION["phonenum"]; ?></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><?php echo $_SESSION["email"]; ?></td>
+    </tr>
+    <tr>
+        <td>Address:</td>
+        <td><?php echo $_SESSION["address"]; ?></td>
+    </tr>
+    <tr>
+        <td>Date Hired:</td>
+        <td><?php echo $_SESSION["date_hired"]; ?></td>
+    </tr>
+    <tr>
+        <td>Username:</td>
+        <td><?php echo $_SESSION["username"]; ?></td>
+    </tr>
+    <tr>
+        <td>Password:</td>
+        <td><?php echo $_SESSION["password"]; ?></td>
+    </tr>
+</table>
 
 <br><br>
 <a href="logout.php">Logout</a>
