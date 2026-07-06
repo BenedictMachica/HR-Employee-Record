@@ -8,12 +8,9 @@ if(isset($_POST["create"]))
     $_SESSION["gender"] = $_POST["gender"];
     $_SESSION["dob"] = $_POST["dob"];
     $_SESSION["department"] = $_POST["department"];
-    $_SESSION["position"] = $_POST["position"];
-    $_SESSION["salary"] = $_POST["salary"];
     $_SESSION["phonenum"] = $_POST["phonenum"];
     $_SESSION["email"] = $_POST["email"];
     $_SESSION["address"] = $_POST["address"];
-    $_SESSION["date_hired"] = $_POST["date_hired"];
     $_SESSION["username"] = $_POST["username"];
     $_SESSION["password"] = $_POST["password"];
 
@@ -49,14 +46,6 @@ if(isset($_POST["create"]))
                 <td><input type="text" name="department"></td>
             </tr>
             <tr>
-                <td>Position:</td>
-                <td><input type="text" name="position"></td>
-            </tr>
-            <tr>
-                <td>Salary:</td>
-                <td><input type="text" name="salary"></td>
-            </tr>
-            <tr>
                 <td>Phone Number:</td>
                 <td><input type="text" name="phonenum"></td>
             </tr>
@@ -67,10 +56,6 @@ if(isset($_POST["create"]))
             <tr>
                 <td>Address:</td>
                 <td><input type="address" name="address"></td>
-            </tr>
-            <tr>
-                <td>Date Hired:</td>
-                <td><input type="date" name="date_hired"></td>
             </tr>
             <tr>
                 <td>Create Username:</td>
