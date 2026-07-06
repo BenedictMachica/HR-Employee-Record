@@ -1,7 +1,8 @@
-<?php include("db.php"); ?>
+
 
 <?php
 include("session.php");
+include("db.php");
 
 if(isset($_POST["create"]))
 {
@@ -72,6 +73,23 @@ if(isset($_POST["create"]))
             </tr>
         </table>
     </form>
+
+<?php
+if(isset($_POST['submit']))
+{
+    $fname = $_POST['fname'];
+    $lname = $_POST['lname'];
+    $type = $_POST['type'];
+
+    mysqli_query($conn,
+        "INSERT INTO user_data(fname,lname,gender,type,image)
+         VALUES('$name','$type','$image')"
+    );
+// work  on progress
+    echo "<p>Pokémon added successfully!</p>";
+}
+?>
+ 
 
     </body>
 </html>
