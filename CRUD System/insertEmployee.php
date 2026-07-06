@@ -5,11 +5,13 @@ include "database.php";
 $firstname=$_POST['firstname'];
 $lastname=$_POST['lastname'];
 $gender=$_POST['gender'];
+$dob=$_POST['dob'];
 $department=$_POST['department'];
 $position=$_POST['position'];
 $salary=$_POST['salary'];
 $email=$_POST['email'];
 $contact=$_POST['contact'];
+$address=$_POST['address'];
 $date=$_POST['date'];
 
 $sql="INSERT INTO employees

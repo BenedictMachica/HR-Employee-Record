@@ -12,6 +12,10 @@ Gender
 
 <input type="text" name="gender">
 
+Date of Birth
+
+<input type="date" name="dob">
+
 Department
 
 <input type="text" name="department">
@@ -31,6 +35,10 @@ Email
 Contact Number
 
 <input type="text" name="contact">
+
+Address
+
+<input type="address" name="address">
 
 Date Hired
 

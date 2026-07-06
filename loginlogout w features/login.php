@@ -1,15 +1,15 @@
 <?php
 include("session.php");
 
-if(isset($_POST["login"]))
-{
-    if($_POST["password"] == $_SESSION["password"])
-    {
+if (isset($_POST["login"])) {
+    $postedPassword = $_POST["password"] ?? '';
+    $sessionPassword = $_SESSION["password"] ?? null;
+
+    if ($sessionPassword !== null && $postedPassword === $sessionPassword) {
         $_SESSION["login"] = true;
         header("Location: account.php");
-    }
-    else
-    {
+        exit;
+    } else {
         echo "Wrong Password!";
     }
 }

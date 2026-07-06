@@ -41,6 +41,9 @@ $row = mysqli_fetch_assoc($result);
     Gender:<br>
     <input type="text" name="gender" value="<?php echo $row['gender']; ?>"><br><br>
 
+    Date of Birth:<br>
+    <input type="date" name="dob" value="<?php echo $row['date_of_birth']; ?>"><br><br>
+
     Department:<br>
     <input type="text" name="department" value="<?php echo $row['department']; ?>"><br><br>
 
@@ -55,6 +58,9 @@ $row = mysqli_fetch_assoc($result);
 
     Contact Number:<br>
     <input type="text" name="contact" value="<?php echo $row['contact_number']; ?>"><br><br>
+
+    Address:<br>
+    <input type="text" name="address" value="<?php echo $row['address']; ?>"><br><br>
 
     Date Hired:<br>
     <input type="date" name="date" value="<?php echo $row['date_hired']; ?>"><br><br>
