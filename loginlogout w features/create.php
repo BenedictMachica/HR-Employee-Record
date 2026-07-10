@@ -79,14 +79,20 @@ if(isset($_POST['submit']))
 {
     $fname = $_POST['fname'];
     $lname = $_POST['lname'];
-    $type = $_POST['type'];
+    $gender = $_POST['gender'];
+    $dob = $_POST['dob'];
+    $department = $_POST['department'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     mysqli_query($conn,
-        "INSERT INTO user_data(fname,lname,gender,type,image)
-         VALUES('$name','$type','$image')"
+        "INSERT INTO emp_data(fname,lname,gender,dob,department,email,address,username,password)
+         VALUES('$fname','$lname','$gender','$dob','$department','$email','$address','$username','$password')"
     );
-// work  on progress
-    echo "<p>Pokémon added successfully!</p>";
+
+    echo "<p>Employee added successfully!</p>";
 }
 ?>
  
